@@ -1,0 +1,144 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+h1,h2,h3,h4,p,ul,ol,li,body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    transition: all 0.3s ease-out;
+}
+
+/* OHRANICENI */
+.container {
+    width: 670px;
+    height: 530px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin: 60px auto;
+    display: flex; /*vedle sebe - nebo inline-block*/
+}
+
+/* UPRAVY STRAN */
+/* vzdy se musime vlezt do 100% */
+/* LEVA STRANA */ 
+
+.leva {
+    flex: 0 1 35%;
+    background: linear-gradient(#003b27,#50cc49); /*barevny prechod*/
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; /*nebo border-radius: 50px 0 0 50px */
+    margin-right: 20px;
+    position: relative; /* k cemu pozicujeme */
+}
+.leva a img {
+    width: 70%; 
+}
+.leva a {
+    position: absolute; /* co pozicujeme */
+    top: 30px;
+    left: 40px;
+}
+.leva p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 14px;
+}
+.leva p span {
+    font-weight: 700;
+    font-size: 30px;
+}
+.leva .ice {
+    width: 160%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* PRAVA STRANA */
+
+.prava {
+    flex: 0 1 65%;
+    position: relative;
+}
+h1 {
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+.prava .chut {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    font-size: 14px;
+    color: grey;
+}
+.prava .text {
+    border-bottom: 1px solid #003b27;
+    padding-bottom: 30px;
+    text-align: justify;
+    width: 80%;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.prava h2 {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 200px;
+    left: 15px;
+    font-weight: 200;
+}
+.prava ul {
+    position: absolute;
+    bottom: 160px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 80%; /*aby prvky byly od sebe a zaroven byly zarovnany podle textu vyse => jinak: margin-right: 20px;*/
+}
+/* NEBO:
+.prava ul li {
+    display: inline-block;
+}*/
+
+.prava ul li a {
+    text-decoration: none;
+    color: black;
+}
+.prava ul li a:hover {
+    color: #003b27;
+    border-bottom: 3px solid #003b27;
+    border-bottom-width: 70%;
+    padding-bottom: 10px;
+}
+.prava .tlacitko {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 25px;
+    background: #50cc49;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    color: white;
+    text-decoration: none;
+}
+.prava .tlacitko:hover {
+    background: #003b27;
+}
+
+
+
+
+
+
+
+
